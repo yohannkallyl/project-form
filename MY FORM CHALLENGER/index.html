@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">FORMULÁRIO</h1>
+        
+        <p id="description">Meu primeiro projeto individual utilizado HTML e CSS</p>
+        
+        <form id="survey-form" action="">
+            
+            <fieldset>
+                
+                <label for="" id="name-label">Nome:</label>
+                <input class="campos" type="text" id="name" placeholder="Insira seu nome" required>
+                
+                <label for="" id="email-label" class="orientacoes">Email:</label>
+                <input class="campos" type="email" id="email" placeholder="Insira seu email" required>
+                
+                <label for="" id="number-label" class="orientacoes">Idade (opcional)</label>
+                
+                <input type="number" id="number" min="10" max="99" placeholder="Idade" >
+                <!-- <input type="number" min="13" max="120" id="age" name="idade"></label> -->
+        
+                <label for="" class="orientacoes">Qual opção melhor descreve a sua função?</label>
+        
+                <select>
+                    
+                    <option value="17">Selecione sua função</option>
+                   
+                    <option value="18">Estudante</option>
+                    
+                    <option value="19">Muito tempo de trabalho</option>
+                    
+                    <option value="20">Bastante tempo para aprender</option>
+                    
+                    <option value="21">Prefiro não dizer</option>
+                    
+                    <option value="22">Other</option>
+                
+                </select>
+        
+                <label for="">Você tem interesse de aprender programação?</label>
+                
+                <label for=""><input type="radio" name="button-radio" value="23">Com certeza!</label>
+        
+                <label for=""><input type="radio" name="button-radio" value="24">Talvez...</label>
+                
+                <label for=""><input type="radio" name="button-radio" value="25">Não é minha praia...</label>
+                
+                <label for="">What is your favorite feature of freeCodeCamp?</label>
+                
+                <select class="opcoes">
+                    
+                    <option value="1">Select an option</option>
+                    
+                    <option value="2">Challenges</option>
+                    
+                    <option value="3">Projects</option>
+                    
+                    <option value="4">Community</option>
+                    
+                    <option value="5">Open Source</option>
+                
+                </select>
+                
+                <label for="">O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</label>
+                <label for=""> <input type="checkbox">Front-end Projects</label>
+                
+                <label for=""> <input type="checkbox">Back-end Projects</label>
+
+                <label for=""> <input type="checkbox">Data Visualization</label>
+
+                <label for=""> <input type="checkbox">Challenges</label>
+
+                <label for=""> <input type="checkbox">Open Source Community</label>
+
+                <label for=""> <input type="checkbox">Gitter help rooms</label>
+
+                <label for=""> <input type="checkbox">Videos</label>
+
+                <label for=""> <input type="checkbox">City Meetups</label>
+
+                <label for=""> <input type="checkbox">Wiki</label>
+
+                <label for=""> <input type="checkbox">Forum</label>
+
+                <label for=""> <input type="checkbox">Additional Courses</label>
+
+                    <label for="bio">Fale mais sobre você</label>
+                    <textarea name="bio" placeholder="escreva aqui :)"></textarea></label>
+                
+                
+        
+        <input type="submit" value="Submit" id="button-submit">
+
+        
+                <!-- botao teste -->
+            </fieldset>
+        </form>
+        <footer>Projeto desenvolvido por <a href="https://github.com/yohannkallyl" target="_blank" rel="external">Yohann Kallyl</a></footer>
+        </body>
+    </main>
+</html>
