@@ -1,109 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="formstyle.css">
 </head>
+
 <body>
-    <main>
+    <header>
         <h1 id="title">FORMULÁRIO</h1>
-        
         <p id="description">Meu primeiro projeto individual utilizado HTML e CSS</p>
+    </header>
+    <main>
         
+        
+
         <form id="survey-form" action="">
-            
+
             <fieldset>
+
+                <section>
+                    <label for="" id="name-label">Nome:</label>
+                    <input class="campos" type="text" id="name" placeholder="Insira seu nome" required>
+                </section>
+
+                <section>
+                    <label for="" id="email-label" class="orientacoes">Email:</label>
+                    <input class="campos" type="email" id="email" placeholder="Insira seu email" required>
+                </section>
+
+                <section>
+                    <label for="" id="number-label" class="orientacoes">Idade (opcional)</label>
+                    <input type="number" id="number" min="10" max="99" placeholder="Idade">
+                </section>
                 
-                <label for="" id="name-label">Nome:</label>
-                <input class="campos" type="text" id="name" placeholder="Insira seu nome" required>
                 
-                <label for="" id="email-label" class="orientacoes">Email:</label>
-                <input class="campos" type="email" id="email" placeholder="Insira seu email" required>
                 
-                <label for="" id="number-label" class="orientacoes">Idade (opcional)</label>
-                
-                <input type="number" id="number" min="10" max="99" placeholder="Idade" >
                 <!-- <input type="number" min="13" max="120" id="age" name="idade"></label> -->
-        
-                <label for="" class="orientacoes">Qual opção melhor descreve a sua função?</label>
-        
-                <select>
-                    
-                    <option value="17">Selecione sua função</option>
-                   
-                    <option value="18">Estudante</option>
-                    
-                    <option value="19">Muito tempo de trabalho</option>
-                    
-                    <option value="20">Bastante tempo para aprender</option>
-                    
-                    <option value="21">Prefiro não dizer</option>
-                    
-                    <option value="22">Other</option>
+                <section>
+                    <label for="" class="orientacoes">Qual opção melhor descreve a sua função?</label>
+
+                    <select>
+
+                        <option value="17">Selecione sua função</option>
+                        <option value="18">Estudante</option>
+                        <option value="19">Muito tempo de trabalho</option>
+                        <option value="20">Bastante tempo para aprender</option>
+                        <option value="21">Prefiro não dizer</option>
+                        <option value="22">Other</option>
+
+                    </select>
+                </section>
                 
-                </select>
-        
-                <label for="">Você tem interesse de aprender programação?</label>
+                <section>
+                    <label for="">Você tem interesse de aprender programação?</label>
+                    <label for="" class="label-option"><input type="radio" name="button-radio" value="23">Com certeza!</label>
+                    <label for="" class="label-option"><input type="radio" name="button-radio" value="24">Talvez...</label>
+                    <label for="" class="label-option"><input type="radio" name="button-radio" value="25">Não é minha praia...</label>
+                </section>
+                <section>
+                    <label for="">What is your favorite feature of freeCodeCamp?</label>
+
+                    <select class="opcoes">
+
+                        <option value="1">Select an option</option>
+                        <option value="2">Challenges</option>
+                        <option value="3">Projects</option>
+                        <option value="4">Community</option>
+                        <option value="5">Open Source</option>
+
+                    </select>
+                </section>
                 
-                <label for=""><input type="radio" name="button-radio" value="23">Com certeza!</label>
-        
-                <label for=""><input type="radio" name="button-radio" value="24">Talvez...</label>
-                
-                <label for=""><input type="radio" name="button-radio" value="25">Não é minha praia...</label>
-                
-                <label for="">What is your favorite feature of freeCodeCamp?</label>
-                
-                <select class="opcoes">
+                <section class="many-options">
+                    <label for="">O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</label>
+                    <aside>
+                        <label for="" class="label-option"> <input type="checkbox">Front-end Projects</label>
+                        <label for="" class="label-option"> <input type="checkbox">Back-end Projects</label>
+                        <label for="" class="label-option"> <input type="checkbox">Data Visualization</label>
+                        <label for="" class="label-option"> <input type="checkbox">Challenges</label>
+                        <label for="" class="label-option"> <input type="checkbox">Open Source Community</label>
+                        <label for="" class="label-option"> <input type="checkbox">Gitter help rooms</label>
+                        <label for="" class="label-option"> <input type="checkbox">Videos</label>
+                        <label for="" class="label-option"> <input type="checkbox">City Meetups</label>
+                        <label for="" class="label-option"> <input type="checkbox">Wiki</label>
+                        <label for="" class="label-option"> <input type="checkbox">Forum</label>
+                        <label for="" class="label-option"> <input type="checkbox">Additional Courses</label>
+                        
+                    </aside>
+
                     
-                    <option value="1">Select an option</option>
-                    
-                    <option value="2">Challenges</option>
-                    
-                    <option value="3">Projects</option>
-                    
-                    <option value="4">Community</option>
-                    
-                    <option value="5">Open Source</option>
-                
-                </select>
-                
-                <label for="">O que você gostaria de ver melhorado? (Marque todos os que se aplicam)</label>
-                <label for=""> <input type="checkbox">Front-end Projects</label>
-                
-                <label for=""> <input type="checkbox">Back-end Projects</label>
-
-                <label for=""> <input type="checkbox">Data Visualization</label>
-
-                <label for=""> <input type="checkbox">Challenges</label>
-
-                <label for=""> <input type="checkbox">Open Source Community</label>
-
-                <label for=""> <input type="checkbox">Gitter help rooms</label>
-
-                <label for=""> <input type="checkbox">Videos</label>
-
-                <label for=""> <input type="checkbox">City Meetups</label>
-
-                <label for=""> <input type="checkbox">Wiki</label>
-
-                <label for=""> <input type="checkbox">Forum</label>
-
-                <label for=""> <input type="checkbox">Additional Courses</label>
-
+                </section>
+                <section class="section-submit">
                     <label for="bio">Fale mais sobre você</label>
                     <textarea name="bio" placeholder="escreva aqui :)"></textarea></label>
-                
-                
-        
-        <input type="submit" value="Submit" id="button-submit">
+                    <input type="submit" value="Submit" id="button-submit">
 
-        
+                </section>
+                
+
+
+
+
+
                 <!-- botao teste -->
             </fieldset>
         </form>
-        <footer>Projeto desenvolvido por <a href="https://github.com/yohannkallyl" target="_blank" rel="external">Yohann Kallyl</a></footer>
-        </body>
-    </main>
+        <footer>Projeto desenvolvido por <a href="https://github.com/yohannkallyl" target="_blank" rel="external">YohannKallyl</a>
+        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            ScrollReveal().reveal('section:nth-child(1)', { delay: 50, origin: "top", duration: 800, distance: "800px"});
+            ScrollReveal().reveal('section:nth-child(2)', { delay: 100, origin: "right", duration: 1000, distance: "750px"});
+            ScrollReveal().reveal('section:nth-child(3)', { delay: 150, origin: "right", duration: 1200, distance: "700px"});
+            ScrollReveal().reveal('section:nth-child(4)', { delay: 200, origin: "right", duration: 1400, distance: "650px"});
+            ScrollReveal().reveal('section:nth-child(5)', { delay: 250, origin: "right", duration: 1600, distance: "600px"});
+            ScrollReveal().reveal('section:nth-child(6)', { delay: 300, origin: "right", duration: 1800, distance: "550px"});
+            ScrollReveal().reveal('section:nth-child(7)', { delay: 350, origin: "right", duration: 2000, distance: "500px"});
+            ScrollReveal().reveal('section:nth-child(8)', { delay: 400, origin: "right", duration: 2200, distance: "450px"});
+        </script>
+</body>
+</main>
+
 </html>
